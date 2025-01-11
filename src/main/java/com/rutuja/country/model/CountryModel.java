@@ -1,18 +1,19 @@
 package com.rutuja.country.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import lombok.Data;
 
-@Entity(name = "country")
+import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
+
+@Table(name = "country")
 @Data
 public class CountryModel {
 
-    @Column(name = "countryId")
+    @Column(value = "countryId")
     @Id
    private Integer countryId;
 
-    @Column(name = "countryName")
+    @Column(value = "countryName")
     private String countryName;
 }
