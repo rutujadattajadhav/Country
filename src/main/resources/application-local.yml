@@ -17,7 +17,7 @@ spring:
     base-path: /country
 server:
   servlet:
-    context-path-state: /state/
+    #context-path-state: /state/
   port: 8089
 
 #management:
