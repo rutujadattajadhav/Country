@@ -25,7 +25,7 @@ public class CountryController {
     @GetMapping("/{countryId}")
     public Mono<CountryModel> getCountryById(@PathVariable("countryId") Integer countryId) throws Exception {
          try {
-             log.info("got country successfully");
+             log.info("got country name and id successfully");
              return countryService.getcountryById(countryId);
          }catch(ServiceException e){
          throw e;
