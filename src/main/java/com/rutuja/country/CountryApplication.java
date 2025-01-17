@@ -10,7 +10,7 @@ import reactor.core.publisher.Hooks;
 import java.util.UUID;
 
 @SpringBootApplication
-@ComponentScan("com.rutuja")
+
 public class CountryApplication {
 
 	public static void main(String[] args) {
